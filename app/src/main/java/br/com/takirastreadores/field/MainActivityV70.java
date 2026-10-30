@@ -13,14 +13,14 @@ import java.net.*;
 import java.util.*;
 
 public class MainActivityV70 extends MainActivityV611 {
-    static final String VERSION_70="7.0.0";
+    static final String VERSION_70="7.0.1";
 
     @Override public void onCreate(Bundle b){super.onCreate(b);}
 
     @Override void screenHeader(String title,String sub,String active){super.screenHeader(title,sub,active);replace70(list);}
     @Override void welcomeScreen(){super.welcomeScreen();replace70(list);}
     void replace70(View v){
-        if(v instanceof TextView){TextView t=(TextView)v;String s=String.valueOf(t.getText());s=s.replace("FIELD OPS • 6.1.1","FIELD OPS • 7.0").replace("FIELD OPERATIONS • 6.1.1","FIELD OPERATIONS • 7.0").replace("FIELD OPS • 6.1","FIELD OPS • 7.0").replace("FIELD OPERATIONS • 6.1","FIELD OPERATIONS • 7.0");t.setText(s);}
+        if(v instanceof TextView){TextView t=(TextView)v;String s=String.valueOf(t.getText());s=s.replace("FIELD OPS • 6.1.1","FIELD OPS • 7.0.1").replace("FIELD OPERATIONS • 6.1.1","FIELD OPERATIONS • 7.0.1").replace("FIELD OPS • 6.1","FIELD OPS • 7.0.1").replace("FIELD OPERATIONS • 6.1","FIELD OPERATIONS • 7.0.1").replace("FIELD OPS • 7.0","FIELD OPS • 7.0.1").replace("FIELD OPERATIONS • 7.0","FIELD OPERATIONS • 7.0.1");t.setText(s);}
         if(v instanceof ViewGroup){ViewGroup g=(ViewGroup)v;for(int i=0;i<g.getChildCount();i++)replace70(g.getChildAt(i));}
     }
 
