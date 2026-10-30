@@ -1,0 +1,93 @@
+name: Bootstrap and Build TAKI FIELD 7.0.0
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap-build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout clean repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout corrected 7.0.0 source
+        uses: actions/checkout@v4
+        with:
+          repository: SrRafa13/TAKI_FIELD_ANDROID
+          ref: dbf469c14697cd680272a68bd21f3f45bad89e44
+          path: source
+          persist-credentials: false
+
+      - name: Copy only clean Android project files
+        shell: bash
+        run: |
+          rm -rf app
+          rm -f build.gradle gradle.properties settings.gradle
+          cp -R source/app ./app
+          cp source/build.gradle ./build.gradle
+          cp source/gradle.properties ./gradle.properties
+          cp source/settings.gradle ./settings.gradle
+          printf '7.0.0\n' > version.txt
+          rm -rf source
+
+      - name: Point in-app update check to clean repository
+        shell: bash
+        run: |
+          sed -i 's#SrRafa13/TAKI_FIELD_ANDROID/main/version.txt#SrRafa13/TAKI_FIELD_7_0_CLEAN/main/version.txt#g' app/src/main/java/br/com/takirastreadores/field/MainActivityV70.java
+          sed -i 's#SrRafa13/TAKI_FIELD_ANDROID/actions#SrRafa13/TAKI_FIELD_7_0_CLEAN/actions#g' app/src/main/java/br/com/takirastreadores/field/MainActivityV70.java
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Android SDK 35
+        shell: bash
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses >/dev/null || true
+          "$SDKMANAGER" "platforms;android-35" "build-tools;35.0.0" "platform-tools"
+
+      - name: Set up Gradle 8.10.2
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+
+      - name: Compile TAKI FIELD 7.0.0
+        shell: bash
+        run: gradle clean assembleDebug --stacktrace
+
+      - name: Prepare final APK
+        shell: bash
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk TAKI_FIELD_v7.0.0.apk
+          sha256sum TAKI_FIELD_v7.0.0.apk
+          unzip -t TAKI_FIELD_v7.0.0.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TAKI-FIELD-APK-v7.0.0
+          path: TAKI_FIELD_v7.0.0.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit clean source into this repository
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app build.gradle gradle.properties settings.gradle version.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Import corrected TAKI FIELD 7.0.0 clean source"
+            git push origin HEAD:main
+          fi
