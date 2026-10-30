@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#080808</color>
+    <color name="green">#35C759</color>
+    <color name="line">#2A2A2A</color>
+    <color name="muted">#A0A0A0</color>
+    <color name="panel">#111111</color>
+    <color name="panel_2">#181818</color>
+    <color name="red">#F5222D</color>
+    <color name="red_dark">#B5121B</color>
+    <color name="white">#F6F6F6</color>
+    <string name="app_name">TAKI FIELD</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#080808</item>
+        <item name="android:navigationBarColor">#080808</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#080808</item>
+        <item name="android:colorAccent">#F5222D</item>
+    </style>
+</resources>

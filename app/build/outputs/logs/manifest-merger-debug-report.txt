@@ -1,0 +1,391 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:40:13-47
+	android:authorities
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:38:13-64
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:37:13-62
+manifest
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:1:1-46:12
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:1:1-46:12
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:1:1-46:12
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:1:1-46:12
+MERGED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.activity:activity:1.3.1] /home/runner/.gradle/caches/8.10.2/transforms/358f63f959c4e784ea303aff47786262/transformed/jetified-activity-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4e4556dd9db06bb4f0ef7c69a3ebcf69/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/runner/.gradle/caches/8.10.2/transforms/373deb4bf97df5f34d18e680787a7a1c/transformed/jetified-transport-api-2.2.1/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/runner/.gradle/caches/8.10.2/transforms/ee9384290d2f3a4c3dc4cc06d531fa6d/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/77cc7aa2f25813d26d7324b30e221aad/transformed/jetified-firebase-components-16.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/runner/.gradle/caches/8.10.2/transforms/7720d0d23f71f91009eafe2e476e29a7/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/42c59c169f75cd2ae8b729d457e5dec4/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d2e95da1ed2838aab7ab1af015edb407/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/9802cb356f13284ae42e2421b30f7845/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6e3b1336a27e434f73f782ce10dcc9e7/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4be2f747f7120079ade775c7af6e8324/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/91742e6bfeb22fc90674cb7cadb70f70/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4c5bc66b00cf5979a8706830c0c9fcd3/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/36c81a7290764fbc844b943603f02738/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d4d9ff18ac61e4ca68f5cc7224679067/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/586635a3ee0aa0f718be21ed2b711a6f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/f66946b8898a5fa4f0a06684e342a524/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/47c90535ca2d1b6c3a356728447d33f6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/07934b3dfc7f45e37b0a99ee23f3e4b0/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/62c87565bb3d6d87151528fb69cbe460/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/1b716adb3cb32c757800891714e81e5f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7d7f1b054e6316279729d9f3cae16a1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/dd213a4ac6d8b183de8c103e19cf8e90/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/runner/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/46e25f428b5f43260c8239e22b28a616/transformed/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/adcee894b3f823018bde6fb24b2d70bf/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/7d2c13b65d99b6812e56d214bb41a5c9/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6ef69e19f1decebaaf58f6f9dfa97e70/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f959ec26066c8efdfdad365088c37ee4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f63234b86b825993fbe0692e1f86170a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/runner/.gradle/caches/8.10.2/transforms/2dfd5b63f7f93d7eab796cd07f09cad6/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:2:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:2:22-64
+application
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:4:5-45:19
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:4:5-45:19
+MERGED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:8:5-21:19
+MERGED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:8:5-21:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:8:5-24:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/runner/.gradle/caches/8.10.2/transforms/ee9384290d2f3a4c3dc4cc06d531fa6d/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/runner/.gradle/caches/8.10.2/transforms/ee9384290d2f3a4c3dc4cc06d531fa6d/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/62c87565bb3d6d87151528fb69cbe460/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/62c87565bb3d6d87151528fb69cbe460/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/runner/.gradle/caches/8.10.2/transforms/2dfd5b63f7f93d7eab796cd07f09cad6/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/runner/.gradle/caches/8.10.2/transforms/2dfd5b63f7f93d7eab796cd07f09cad6/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:7:9-35
+	android:roundIcon
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:8:9-50
+	android:icon
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:6:9-45
+	android:allowBackup
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:10:9-40
+activity#br.com.takirastreadores.field.MainActivityV70
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:12:9-26:20
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:16:13-49
+	android:launchMode
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:15:13-43
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:13:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:17:13-20:29
+action#android.intent.action.MAIN
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:19:27-74
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.SEND
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:23:17-76
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:23:27-73
+data
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:24:17-55
+	android:mimeType
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:24:23-52
+activity#br.com.takirastreadores.field.MainActivityV611
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:9-116
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:77-113
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:52-76
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:19-51
+activity#br.com.takirastreadores.field.MainActivityV61
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:9-115
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:76-112
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:51-75
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:19-50
+activity#br.com.takirastreadores.field.MainActivityV60
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:9-115
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:76-112
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:51-75
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:19-50
+activity#br.com.takirastreadores.field.InstallationActivityV70
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:9-123
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:84-120
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:59-83
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:19-58
+activity#br.com.takirastreadores.field.InstallationActivityV61
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:9-123
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:84-120
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:59-83
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:19-58
+activity#br.com.takirastreadores.field.InstallationActivityV60
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:9-123
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:84-120
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:59-83
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:19-58
+activity#br.com.takirastreadores.field.InstallationActivity
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:9-120
+	android:screenOrientation
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:81-117
+	android:exported
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:56-80
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:19-55
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:41:13-43:54
+	android:resource
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:43:17-51
+	android:name
+		ADDED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:42:17-67
+uses-sdk
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:6:5-44
+MERGED from [androidx.activity:activity:1.3.1] /home/runner/.gradle/caches/8.10.2/transforms/358f63f959c4e784ea303aff47786262/transformed/jetified-activity-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.3.1] /home/runner/.gradle/caches/8.10.2/transforms/358f63f959c4e784ea303aff47786262/transformed/jetified-activity-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4e4556dd9db06bb4f0ef7c69a3ebcf69/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:barcode-scanning-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4e4556dd9db06bb4f0ef7c69a3ebcf69/transformed/jetified-barcode-scanning-common-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/runner/.gradle/caches/8.10.2/transforms/373deb4bf97df5f34d18e680787a7a1c/transformed/jetified-transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] /home/runner/.gradle/caches/8.10.2/transforms/373deb4bf97df5f34d18e680787a7a1c/transformed/jetified-transport-api-2.2.1/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/runner/.gradle/caches/8.10.2/transforms/ee9384290d2f3a4c3dc4cc06d531fa6d/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/runner/.gradle/caches/8.10.2/transforms/ee9384290d2f3a4c3dc4cc06d531fa6d/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/77cc7aa2f25813d26d7324b30e221aad/transformed/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/77cc7aa2f25813d26d7324b30e221aad/transformed/jetified-firebase-components-16.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/runner/.gradle/caches/8.10.2/transforms/7720d0d23f71f91009eafe2e476e29a7/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] /home/runner/.gradle/caches/8.10.2/transforms/7720d0d23f71f91009eafe2e476e29a7/transformed/jetified-firebase-encoders-json-17.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.fragment:fragment:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/42c59c169f75cd2ae8b729d457e5dec4/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/42c59c169f75cd2ae8b729d457e5dec4/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d2e95da1ed2838aab7ab1af015edb407/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d2e95da1ed2838aab7ab1af015edb407/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/9802cb356f13284ae42e2421b30f7845/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/9802cb356f13284ae42e2421b30f7845/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6e3b1336a27e434f73f782ce10dcc9e7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6e3b1336a27e434f73f782ce10dcc9e7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4be2f747f7120079ade775c7af6e8324/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4be2f747f7120079ade775c7af6e8324/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/91742e6bfeb22fc90674cb7cadb70f70/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/91742e6bfeb22fc90674cb7cadb70f70/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4c5bc66b00cf5979a8706830c0c9fcd3/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/4c5bc66b00cf5979a8706830c0c9fcd3/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/36c81a7290764fbc844b943603f02738/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/36c81a7290764fbc844b943603f02738/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d4d9ff18ac61e4ca68f5cc7224679067/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/d4d9ff18ac61e4ca68f5cc7224679067/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/586635a3ee0aa0f718be21ed2b711a6f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/586635a3ee0aa0f718be21ed2b711a6f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/f66946b8898a5fa4f0a06684e342a524/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/f66946b8898a5fa4f0a06684e342a524/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/47c90535ca2d1b6c3a356728447d33f6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/47c90535ca2d1b6c3a356728447d33f6/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/07934b3dfc7f45e37b0a99ee23f3e4b0/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/07934b3dfc7f45e37b0a99ee23f3e4b0/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/62c87565bb3d6d87151528fb69cbe460/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/runner/.gradle/caches/8.10.2/transforms/62c87565bb3d6d87151528fb69cbe460/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/1b716adb3cb32c757800891714e81e5f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/1b716adb3cb32c757800891714e81e5f/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7d7f1b054e6316279729d9f3cae16a1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7d7f1b054e6316279729d9f3cae16a1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/dd213a4ac6d8b183de8c103e19cf8e90/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/runner/.gradle/caches/8.10.2/transforms/dd213a4ac6d8b183de8c103e19cf8e90/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/runner/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/runner/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/46e25f428b5f43260c8239e22b28a616/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/46e25f428b5f43260c8239e22b28a616/transformed/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/adcee894b3f823018bde6fb24b2d70bf/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/adcee894b3f823018bde6fb24b2d70bf/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/7d2c13b65d99b6812e56d214bb41a5c9/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/7d2c13b65d99b6812e56d214bb41a5c9/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6ef69e19f1decebaaf58f6f9dfa97e70/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/6ef69e19f1decebaaf58f6f9dfa97e70/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f959ec26066c8efdfdad365088c37ee4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f959ec26066c8efdfdad365088c37ee4/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f63234b86b825993fbe0692e1f86170a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/runner/.gradle/caches/8.10.2/transforms/f63234b86b825993fbe0692e1f86170a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/runner/.gradle/caches/8.10.2/transforms/2dfd5b63f7f93d7eab796cd07f09cad6/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /home/runner/.gradle/caches/8.10.2/transforms/2dfd5b63f7f93d7eab796cd07f09cad6/transformed/jetified-image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml
+activity#com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity
+ADDED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:15:9-20:20
+	android:screenOrientation
+		ADDED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:18:13-49
+	android:exported
+		ADDED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:17:13-37
+	tools:ignore
+		ADDED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:19:13-42
+	android:name
+		ADDED from [com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:16:13-107
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:10:13-91
+meta-data#com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar
+ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:13:17-124
+provider#com.google.mlkit.common.internal.MlKitInitProvider
+ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:9:9-13:38
+	android:authorities
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:11:13-69
+	android:exported
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:13:13-35
+	android:name
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:10:13-78
+meta-data#com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar
+ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:21:17-120
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58

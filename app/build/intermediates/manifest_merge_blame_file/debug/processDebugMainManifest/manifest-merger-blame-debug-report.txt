@@ -1,0 +1,241 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.takirastreadores.field"
+4    android:versionCode="9"
+5    android:versionName="7.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:2:5-67
+11-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:2:22-64
+12    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+13    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+14-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+15
+16    <application
+16-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:4:5-45:19
+17        android:allowBackup="true"
+17-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:5:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.2.0] /home/runner/.gradle/caches/8.10.2/transforms/b1cee3508d3b3c4d789a688ffbecfaa0/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@drawable/ic_launcher"
+21-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:6:9-45
+22        android:label="TAKI FIELD"
+22-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:7:9-35
+23        android:roundIcon="@drawable/ic_launcher"
+23-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:8:9-50
+24        android:supportsRtl="true"
+24-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:9:9-35
+25        android:theme="@style/AppTheme" >
+25-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:10:9-40
+26        <activity
+26-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:12:9-26:20
+27            android:name="br.com.takirastreadores.field.MainActivityV70"
+27-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:13:13-44
+28            android:exported="true"
+28-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:14:13-36
+29            android:launchMode="singleTop"
+29-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:15:13-43
+30            android:screenOrientation="portrait" >
+30-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:16:13-49
+31            <intent-filter>
+31-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:17:13-20:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:18:17-69
+32-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:18:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:19:17-77
+34-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:19:27-74
+35            </intent-filter>
+36            <intent-filter>
+36-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:21:13-25:29
+37                <action android:name="android.intent.action.SEND" />
+37-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:22:17-69
+37-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.DEFAULT" />
+39-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:23:17-76
+39-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:23:27-73
+40
+41                <data android:mimeType="text/plain" />
+41-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:24:17-55
+41-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:24:23-52
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:9-116
+45            android:name="br.com.takirastreadores.field.MainActivityV611"
+45-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:19-51
+46            android:exported="false"
+46-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:52-76
+47            android:screenOrientation="portrait" />
+47-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:28:77-113
+48        <activity
+48-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:9-115
+49            android:name="br.com.takirastreadores.field.MainActivityV61"
+49-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:19-50
+50            android:exported="false"
+50-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:51-75
+51            android:screenOrientation="portrait" />
+51-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:29:76-112
+52        <activity
+52-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:9-115
+53            android:name="br.com.takirastreadores.field.MainActivityV60"
+53-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:19-50
+54            android:exported="false"
+54-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:51-75
+55            android:screenOrientation="portrait" />
+55-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:30:76-112
+56        <activity
+56-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:9-123
+57            android:name="br.com.takirastreadores.field.InstallationActivityV70"
+57-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:19-58
+58            android:exported="false"
+58-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:59-83
+59            android:screenOrientation="portrait" />
+59-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:31:84-120
+60        <activity
+60-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:9-123
+61            android:name="br.com.takirastreadores.field.InstallationActivityV61"
+61-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:19-58
+62            android:exported="false"
+62-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:59-83
+63            android:screenOrientation="portrait" />
+63-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:32:84-120
+64        <activity
+64-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:9-123
+65            android:name="br.com.takirastreadores.field.InstallationActivityV60"
+65-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:19-58
+66            android:exported="false"
+66-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:59-83
+67            android:screenOrientation="portrait" />
+67-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:33:84-120
+68        <activity
+68-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:9-120
+69            android:name="br.com.takirastreadores.field.InstallationActivity"
+69-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:19-55
+70            android:exported="false"
+70-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:56-80
+71            android:screenOrientation="portrait" />
+71-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:34:81-117
+72
+73        <provider
+74            android:name="androidx.core.content.FileProvider"
+74-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:37:13-62
+75            android:authorities="br.com.takirastreadores.field.fileprovider"
+75-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:38:13-64
+76            android:exported="false"
+76-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:39:13-37
+77            android:grantUriPermissions="true" >
+77-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:40:13-47
+78            <meta-data
+78-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:41:13-43:54
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:42:17-67
+80                android:resource="@xml/file_paths" />
+80-->/home/runner/work/TAKI_FIELD_7_0_CLEAN/TAKI_FIELD_7_0_CLEAN/app/src/main/AndroidManifest.xml:43:17-51
+81        </provider>
+82        <!--
+83        This activity is an invisible delegate activity to start scanner activity
+84        and receive result, so it's unnecessary to support screen orientation and
+85        we can avoid any side effect from activity recreation in any case.
+86        -->
+87        <activity
+87-->[com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:15:9-20:20
+88            android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity"
+88-->[com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:16:13-107
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:17:13-37
+90            android:screenOrientation="portrait" >
+90-->[com.google.android.gms:play-services-code-scanner:16.1.0] /home/runner/.gradle/caches/8.10.2/transforms/b8ea838205116896866c2747a25d466d/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:18:13-49
+91        </activity>
+92
+93        <service
+93-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:9:9-15:19
+94            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+94-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:10:13-91
+95            android:directBootAware="true"
+95-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:17:13-43
+96            android:exported="false" >
+96-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:11:13-37
+97            <meta-data
+97-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:12:13-14:85
+98                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+98-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:13:17-124
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.mlkit:vision-common:17.0.0] /home/runner/.gradle/caches/8.10.2/transforms/a7ed226f42afad8b58735de5dbd9a45d/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:14:17-82
+100            <meta-data
+100-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:20:13-22:85
+101                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+101-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:21:17-120
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:22:17-82
+103        </service>
+104
+105        <provider
+105-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:9:9-13:38
+106            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+106-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:10:13-78
+107            android:authorities="br.com.takirastreadores.field.mlkitinitprovider"
+107-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:11:13-69
+108            android:exported="false"
+108-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:12:13-37
+109            android:initOrder="99" />
+109-->[com.google.mlkit:common:18.9.0] /home/runner/.gradle/caches/8.10.2/transforms/ab44de509c2c3228bec704f59e1ddd8c/transformed/jetified-common-18.9.0/AndroidManifest.xml:13:13-35
+110
+111        <service
+111-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+112            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+112-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+113            android:exported="false" >
+113-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+114            <meta-data
+114-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+115                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+115-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+116                android:value="cct" />
+116-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/runner/.gradle/caches/8.10.2/transforms/65a14da1b303892c9efa65bc17b77fb4/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+117        </service>
+118        <service
+118-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+119            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+119-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+120            android:exported="false"
+120-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+121            android:permission="android.permission.BIND_JOB_SERVICE" >
+121-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+122        </service>
+123
+124        <receiver
+124-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+125            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+125-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+126            android:exported="false" />
+126-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/runner/.gradle/caches/8.10.2/transforms/a689d1739d0fe2332fb955c146f944eb/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+127
+128        <activity
+128-->[com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+129-->[com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+130            android:exported="false"
+130-->[com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+131-->[com.google.android.gms:play-services-base:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/3208eb778dae46a71e6384b91a5f8685/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+132
+133        <meta-data
+133-->[com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+134            android:name="com.google.android.gms.version"
+134-->[com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+135            android:value="@integer/google_play_services_version" />
+135-->[com.google.android.gms:play-services-basement:18.1.0] /home/runner/.gradle/caches/8.10.2/transforms/972581a0df5e3be3affe46b3a496775b/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+136    </application>
+137
+138</manifest>

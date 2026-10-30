@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/drawable_bg_input.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/xml_file_paths.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/xml/file_paths.xml"
+    },
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/drawable_bg_card.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/drawable_ic_launcher.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/drawable_bg_button_red.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/drawable/bg_button_red.xml"
+    },
+    {
+        "merged": "br.com.takirastreadores.field.app-debug-12:/drawable_bg_button_dark.xml.flat",
+        "source": "br.com.takirastreadores.field.app-main-14:/drawable/bg_button_dark.xml"
+    }
+]

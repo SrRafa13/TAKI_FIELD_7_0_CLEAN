@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color green
+color line
+color muted
+color panel
+color panel_2
+color red
+color red_dark
+color white
+drawable bg_button_dark
+drawable bg_button_red
+drawable bg_card
+drawable bg_input
+drawable ic_launcher
+string app_name
+style AppTheme
+xml file_paths
