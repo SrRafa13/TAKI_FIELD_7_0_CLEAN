@@ -31,7 +31,6 @@ public class MainActivityV702 extends MainActivityV70 {
         }
     }
 
-    // Corrige o bug em que a UI mostrava "Todos", mas os filtros esperavam "Todos os técnicos".
     @Override String[] dashboardTechFilters(ArrayList<ServiceStore.Entry> entries){
         LinkedHashSet<String> names=new LinkedHashSet<>();
         names.add("Todos os técnicos");
@@ -132,6 +131,10 @@ public class MainActivityV702 extends MainActivityV70 {
             if(plate.contains(needle))byPlate.add(e);
         }
         renderDashboard611(holder,byPlate,cursor,service,tech);
+    }
+
+    @Override void openInstallations(){
+        startActivity(new android.content.Intent(this,InstallationActivityV703.class));
     }
 
     @Override void checkUpdate(){
