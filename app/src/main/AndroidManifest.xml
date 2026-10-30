@@ -29,6 +29,7 @@
         <activity android:name=".MainActivityV611" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV61" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV60" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".InstallationActivityV703" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV70" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV61" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV60" android:exported="false" android:screenOrientation="portrait" />
