@@ -13,7 +13,7 @@ public class InstallationActivityV70 extends InstallationActivityV61 {
     @Override public void onCreate(Bundle b){super.onCreate(b);replace70(list);}
 
     void replace70(View v){
-        if(v instanceof TextView){TextView t=(TextView)v;String s=String.valueOf(t.getText());if(s.contains("TAKI FIELD • V6.1"))t.setText(s.replace("TAKI FIELD • V6.1","TAKI FIELD • V7.0"));if(s.contains("EVIDÊNCIAS FOTOGRÁFICAS"))t.setText("FOTOS DO ATENDIMENTO • OPCIONAL");if(s.contains("Registre o painel no início e o resultado final. Fotos extras entram no mesmo relatório."))t.setText("Adicione fotos somente quando forem úteis. Nenhuma foto é obrigatória para concluir o atendimento.");}
+        if(v instanceof TextView){TextView t=(TextView)v;String s=String.valueOf(t.getText());if(s.contains("TAKI FIELD • V6.1"))t.setText(s.replace("TAKI FIELD • V6.1","TAKI FIELD • V7.0.1"));if(s.contains("TAKI FIELD • V7.0"))t.setText(s.replace("TAKI FIELD • V7.0","TAKI FIELD • V7.0.1"));if(s.contains("EVIDÊNCIAS FOTOGRÁFICAS"))t.setText("FOTOS DO ATENDIMENTO • OPCIONAL");if(s.contains("Registre o painel no início e o resultado final. Fotos extras entram no mesmo relatório."))t.setText("Adicione fotos somente quando forem úteis. Nenhuma foto é obrigatória para concluir o atendimento.");}
         if(v instanceof ViewGroup){ViewGroup g=(ViewGroup)v;for(int i=0;i<g.getChildCount();i++)replace70(g.getChildAt(i));}
     }
 
@@ -21,11 +21,83 @@ public class InstallationActivityV70 extends InstallationActivityV61 {
     @Override Button segment(String s,boolean selected,View.OnClickListener l){Button b=super.segment(s,selected,null);b.setOnClickListener(v->{feedback(false);if(l!=null)l.onClick(v);});return b;}
     void feedback(boolean important){try{if(appPrefs==null)appPrefs=getSharedPreferences("taki",MODE_PRIVATE);if(appPrefs.getBoolean("haptic_feedback_v70",true))getWindow().getDecorView().performHapticFeedback(important?HapticFeedbackConstants.LONG_PRESS:HapticFeedbackConstants.KEYBOARD_TAP);if(appPrefs.getBoolean("sound_feedback_v70",false)){AudioManager a=(AudioManager)getSystemService(AUDIO_SERVICE);if(a!=null)a.playSoundEffect(important?AudioManager.FX_KEYPRESS_RETURN:AudioManager.FX_KEY_CLICK,0.35f);}}catch(Exception ignored){}}
 
-    // V7: fotos são evidências opcionais; nunca bloqueiam a geração do relatório.
-    @Override void generateIndividual(){String p=cleanPlate();if(p.isEmpty()){plate.setError("Informe a placa");return;}feedback(true);generateSinglePdf(captureCurrent());}
-    @Override void finishCurrentPlate(){String p=cleanPlate();if(p.isEmpty()){plate.setError("Informe a placa");return;}feedback(true);commitCurrentPlate();}
+    // Registra o serviço imediatamente quando o técnico o conclui.
+    // O PDF gerado depois apenas complementa o mesmo registro com o arquivo do relatório.
+    void recordCompletedService(ServiceRecord r){
+        if(r==null||r.plate==null||r.plate.trim().isEmpty())return;
+        ServiceStore.add(this,r.plate,r.service,r.brand,r.module,currentTech(),r.finishedAt,System.currentTimeMillis(),"");
+    }
+
+    void removeCompletedService(ServiceRecord r){
+        if(r==null)return;
+        ServiceStore.Entry e=new ServiceStore.Entry();
+        e.plate=r.plate==null?"":r.plate;
+        e.service=r.service==null?"":r.service;
+        e.technician=currentTech();
+        e.finishedAt=r.finishedAt==null?"":r.finishedAt;
+        ServiceStore.remove(this,e);
+    }
+
+    // V7.0.1: fotos continuam opcionais e a conclusão passa a alimentar histórico/dashboard/calendário imediatamente.
+    @Override void generateIndividual(){
+        String p=cleanPlate();if(p.isEmpty()){plate.setError("Informe a placa");return;}
+        ServiceRecord r=captureCurrent();
+        recordCompletedService(r);
+        feedback(true);
+        generateSinglePdf(r);
+    }
+
+    @Override void finishCurrentPlate(){
+        String p=cleanPlate();if(p.isEmpty()){plate.setError("Informe a placa");return;}
+        feedback(true);
+        commitCurrentPlate();
+    }
+
+    @Override void commitCurrentPlate(){
+        ServiceRecord r=captureCurrent();
+        recordCompletedService(r);
+        batchRecords.add(r);
+        int keepService=serviceType.getSelectedItemPosition(),keepBrand=moduleBrand.getSelectedItemPosition();
+        clearCurrent();
+        serviceType.setSelection(keepService);
+        moduleBrand.setSelection(keepBrand);
+        saveDraft(false);
+        updateBatchStatus();
+        new AlertDialog.Builder(this)
+            .setTitle("Placa adicionada ✓")
+            .setMessage(r.plate+" entrou no lote e já foi registrada no histórico.\n\nO que deseja fazer agora?")
+            .setNegativeButton("FINALIZAR LOTE",(d,w)->generateBatchPdf())
+            .setPositiveButton("PRÓXIMA PLACA",(d,w)->{plate.requestFocus();Toast.makeText(this,"Próxima placa #"+(batchRecords.size()+1),Toast.LENGTH_SHORT).show();})
+            .show();
+    }
+
     @Override void finalizeBatchRequest(){
-        if(!cleanPlate().isEmpty()){new AlertDialog.Builder(this).setTitle("Placa atual ainda aberta").setMessage("Deseja incluir "+cleanPlate()+" no lote antes de gerar o PDF?").setNegativeButton("Não incluir",(d,w)->generateBatchPdf()).setPositiveButton("INCLUIR E GERAR",(d,w)->{batchRecords.add(captureCurrent());clearCurrent();saveDraft(false);generateBatchPdf();}).show();return;}generateBatchPdf();
+        if(!cleanPlate().isEmpty()){
+            new AlertDialog.Builder(this)
+                .setTitle("Placa atual ainda aberta")
+                .setMessage("Deseja incluir "+cleanPlate()+" no lote antes de gerar o PDF?")
+                .setNegativeButton("Não incluir",(d,w)->generateBatchPdf())
+                .setPositiveButton("INCLUIR E GERAR",(d,w)->{
+                    ServiceRecord r=captureCurrent();
+                    recordCompletedService(r);
+                    batchRecords.add(r);
+                    clearCurrent();
+                    saveDraft(false);
+                    generateBatchPdf();
+                }).show();
+            return;
+        }
+        generateBatchPdf();
+    }
+
+    // Se uma placa for desfeita/aberta para edição, remove o registro anterior para não duplicar métricas.
+    void undoLast(){
+        if(batchRecords.isEmpty()){Toast.makeText(this,"Nenhuma placa para desfazer",Toast.LENGTH_SHORT).show();return;}
+        ServiceRecord r=batchRecords.remove(batchRecords.size()-1);
+        removeCompletedService(r);
+        saveDraft(false);
+        updateBatchStatus();
+        Toast.makeText(this,r.plate+" removida do lote e do histórico",Toast.LENGTH_SHORT).show();
     }
 
     @Override void updateBatchStatus(){if(batchStatus==null)return;int current=batchRecords.size()+1;batchStatus.setText(batchRecords.size()+" placas concluídas  •  atual #"+current);batchStatus.setTextColor(batchRecords.isEmpty()?themeMuted():theme().accent);}
@@ -39,6 +111,12 @@ public class InstallationActivityV70 extends InstallationActivityV61 {
     }
 
     void editBatchRecord(int index){
-        if(index<0||index>=batchRecords.size())return;ServiceRecord r=batchRecords.remove(index);applyCurrent(r);saveDraft(false);updateBatchStatus();Toast.makeText(this,r.plate+" aberta para edição. Finalize a placa para adicioná-la novamente ao lote.",Toast.LENGTH_LONG).show();
+        if(index<0||index>=batchRecords.size())return;
+        ServiceRecord r=batchRecords.remove(index);
+        removeCompletedService(r);
+        applyCurrent(r);
+        saveDraft(false);
+        updateBatchStatus();
+        Toast.makeText(this,r.plate+" aberta para edição. Finalize a placa para registrá-la novamente.",Toast.LENGTH_LONG).show();
     }
 }
