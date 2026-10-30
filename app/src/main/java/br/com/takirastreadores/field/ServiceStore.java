@@ -94,34 +94,64 @@ final class ServiceStore {
     }
 
     static synchronized void add(Context c, Entry incoming) {
+        addVerified(c, incoming);
+    }
+
+    static synchronized boolean addVerified(Context c, Entry incoming) {
+        if (c == null || incoming == null || incoming.plate == null || incoming.plate.trim().isEmpty()) return false;
         ArrayList<Entry> entries = list(c);
         String key = incoming.key();
+        boolean changed = false;
+        boolean found = false;
         for (Entry e : entries) {
             if (e.key().equals(key)) {
-                if (!incoming.reportFile.isEmpty() && e.reportFile.isEmpty()) {
+                found = true;
+                if (!incoming.reportFile.isEmpty() && (e.reportFile == null || e.reportFile.isEmpty())) {
                     e.reportFile = incoming.reportFile;
                     e.reportType = incoming.reportType;
                     e.reportCount = incoming.reportCount;
-                    write(c, entries);
+                    changed = true;
                 }
-                return;
+                if (incoming.batchId != null && !incoming.batchId.isEmpty() && (e.batchId == null || e.batchId.isEmpty())) {
+                    e.batchId = incoming.batchId;
+                    changed = true;
+                }
+                if (incoming.epoch > 0 && e.epoch <= 0) {
+                    e.epoch = incoming.epoch;
+                    changed = true;
+                }
+                break;
             }
         }
-        entries.add(0, incoming);
+        if (!found) {
+            entries.add(0, incoming);
+            changed = true;
+        }
         if (entries.size() > 1500) entries = new ArrayList<>(entries.subList(0, 1500));
-        write(c, entries);
+        if (changed && !writeChecked(c, entries)) return false;
+
+        // Leitura de volta: só confirma sucesso se o registro realmente existir no arquivo persistido.
+        ArrayList<Entry> check = list(c);
+        for (Entry e : check) if (e.key().equals(key)) return true;
+        return false;
     }
 
     static synchronized void add(Context c, String plate, String service, String brand, String module,
                                  String technician, String finishedAt, long epoch, String batchId) {
-        add(c, plate, service, brand, module, technician, finishedAt, epoch, batchId, "", batchId == null || batchId.isEmpty() ? "individual" : "batch", batchId == null || batchId.isEmpty() ? 1 : 0);
+        addVerified(c, plate, service, brand, module, technician, finishedAt, epoch, batchId, "", batchId == null || batchId.isEmpty() ? "individual" : "batch", batchId == null || batchId.isEmpty() ? 1 : 0);
     }
 
     static synchronized void add(Context c, String plate, String service, String brand, String module,
                                  String technician, String finishedAt, long epoch, String batchId,
                                  String reportFile, String reportType, int reportCount) {
+        addVerified(c, plate, service, brand, module, technician, finishedAt, epoch, batchId, reportFile, reportType, reportCount);
+    }
+
+    static synchronized boolean addVerified(Context c, String plate, String service, String brand, String module,
+                                            String technician, String finishedAt, long epoch, String batchId,
+                                            String reportFile, String reportType, int reportCount) {
         Entry e = new Entry();
-        e.plate = plate == null ? "" : plate;
+        e.plate = plate == null ? "" : plate.trim().toUpperCase(Locale.ROOT);
         e.service = service == null ? "" : service;
         e.brand = brand == null ? "" : brand;
         e.module = module == null ? "" : module;
@@ -132,7 +162,18 @@ final class ServiceStore {
         e.reportFile = reportFile == null ? "" : reportFile;
         e.reportType = reportType == null ? "" : reportType;
         e.reportCount = Math.max(0, reportCount);
-        add(c, e);
+        return addVerified(c, e);
+    }
+
+    static synchronized boolean exists(Context c, String plate, String service, String technician, String finishedAt) {
+        Entry probe = new Entry();
+        probe.plate = plate == null ? "" : plate.trim().toUpperCase(Locale.ROOT);
+        probe.service = service == null ? "" : service;
+        probe.technician = technician == null ? "" : technician;
+        probe.finishedAt = finishedAt == null ? "" : finishedAt;
+        String key = probe.key();
+        for (Entry e : list(c)) if (e.key().equals(key)) return true;
+        return false;
     }
 
     static synchronized void remove(Context c, Entry target) {
@@ -141,7 +182,7 @@ final class ServiceStore {
         for (int i = entries.size() - 1; i >= 0; i--) {
             if (entries.get(i).key().equals(key)) entries.remove(i);
         }
-        write(c, entries);
+        writeChecked(c, entries);
     }
 
     static synchronized void clear(Context c) {
@@ -149,25 +190,41 @@ final class ServiceStore {
     }
 
     static synchronized void write(Context c, ArrayList<Entry> entries) {
+        writeChecked(c, entries);
+    }
+
+    static synchronized boolean writeChecked(Context c, ArrayList<Entry> entries) {
         try {
             JSONObject root = new JSONObject();
-            root.put("version", 2);
+            root.put("version", 3);
             JSONArray arr = new JSONArray();
             for (Entry e : entries) arr.put(e.toJson());
             root.put("entries", arr);
+            byte[] data = root.toString().getBytes("UTF-8");
+
             File target = new File(c.getFilesDir(), FILE_NAME);
             File tmp = new File(c.getFilesDir(), FILE_NAME + ".tmp");
             try (FileOutputStream out = new FileOutputStream(tmp)) {
-                out.write(root.toString().getBytes("UTF-8"));
+                out.write(data);
+                out.flush();
+                try { out.getFD().sync(); } catch (Exception ignored) {}
             }
-            if (target.exists()) target.delete();
-            if (!tmp.renameTo(target)) {
-                try (FileOutputStream out = new FileOutputStream(target)) {
-                    out.write(root.toString().getBytes("UTF-8"));
+
+            boolean moved = false;
+            if (target.exists() && !target.delete()) moved = false;
+            if (!target.exists()) moved = tmp.renameTo(target);
+            if (!moved) {
+                try (FileOutputStream out = new FileOutputStream(target, false)) {
+                    out.write(data);
+                    out.flush();
+                    try { out.getFD().sync(); } catch (Exception ignored) {}
                 }
                 tmp.delete();
             }
-        } catch (Exception ignored) {}
+            return target.exists() && target.length() > 0;
+        } catch (Exception ignored) {
+            return false;
+        }
     }
 
     private ServiceStore() {}
