@@ -19,6 +19,9 @@ final class BackupStore {
         try (OutputStream raw = c.getContentResolver().openOutputStream(target);
              ZipOutputStream zip = new ZipOutputStream(new BufferedOutputStream(raw))) {
             putBytes(zip, "prefs.json", prefsJson(prefs).toString(2).getBytes("UTF-8"));
+            putBytes(zip, "fieldkit_prefs.json", prefsJson(FieldKitStore.p(c)).toString(2).getBytes("UTF-8"));
+            File batchDraft = new File(c.getFilesDir(), "installation_batch_v5.json");
+            if (batchDraft.exists()) putFile(zip, batchDraft, "data/installation_batch_v5.json");
 
             File history = new File(c.getFilesDir(), ServiceStore.FILE_NAME);
             if (history.exists()) {
@@ -50,7 +53,7 @@ final class BackupStore {
             while ((e = zip.getNextEntry()) != null) {
                 if (e.isDirectory()) continue;
                 String name = e.getName().replace('\\','/');
-                if (!(name.equals("prefs.json") || name.equals("data/" + ServiceStore.FILE_NAME) || name.startsWith("reports/"))) continue;
+                if (!(name.equals("prefs.json") || name.equals("fieldkit_prefs.json") || name.equals("data/installation_batch_v5.json") || name.equals("data/" + ServiceStore.FILE_NAME) || name.startsWith("reports/"))) continue;
                 File out = new File(tmp, name);
                 String root = tmp.getCanonicalPath() + File.separator;
                 if (!out.getCanonicalPath().startsWith(root)) throw new IOException("Backup inválido");
@@ -65,6 +68,8 @@ final class BackupStore {
         if (!prefsFile.exists()) throw new IOException("Backup não contém preferências");
         JSONObject p = new JSONObject(readText(prefsFile));
         restorePrefs(prefs, p);
+        File fieldkit = new File(tmp, "fieldkit_prefs.json");
+        if (fieldkit.exists()) restorePrefs(FieldKitStore.p(c), new JSONObject(readText(fieldkit)));
         prefs.edit().remove("theme_preview").remove("pending_shared_location").apply();
 
         File history = new File(tmp, "data/" + ServiceStore.FILE_NAME);
@@ -72,6 +77,9 @@ final class BackupStore {
             copy(history, new File(c.getFilesDir(), ServiceStore.FILE_NAME));
             result.history = true;
         }
+
+        File batchDraft = new File(tmp, "data/installation_batch_v5.json");
+        if (batchDraft.exists()) copy(batchDraft, new File(c.getFilesDir(), "installation_batch_v5.json"));
 
         File incomingReports = new File(tmp, "reports");
         File reports = new File(c.getFilesDir(), "reports"); reports.mkdirs();
