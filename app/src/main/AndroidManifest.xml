@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivityV702"
+            android:name=".MainActivityV71"
             android:exported="true"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
@@ -25,10 +25,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivityV702" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV70" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV611" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV61" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".MainActivityV60" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".InstallationActivityV71" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".FieldKitActivity" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV703" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV70" android:exported="false" android:screenOrientation="portrait" />
         <activity android:name=".InstallationActivityV61" android:exported="false" android:screenOrientation="portrait" />
